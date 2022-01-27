@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Hey new user"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/continueNow"
+        android:text="Signup to continue"
+        android:textColor="@color/grey"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="375dp"
+        android:layout_height="251dp"
+        android:layout_below="@id/continueNow"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/foto" />
+
+    <EditText
+        android:id="@+id/emailSign"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/passwordSign"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailSign"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/passwordConfirm"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordSign"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSign"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordConfirm"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

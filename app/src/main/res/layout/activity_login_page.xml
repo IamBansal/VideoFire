@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Welcome Back"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/continueNow"
+        android:text="Login to continue"
+        android:textColor="@color/grey"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginLeft="20dp"
+        android:layout_width="375dp"
+        android:layout_height="251dp"
+        android:layout_below="@id/continueNow"
+        android:src="@mipmap/photo" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLogin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvForgot"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Don't have an account? Sign up" />
+
+
+    <TextView
+        android:id="@+id/tvSignGoogle"
+        android:text="Sign in with Google"
+        android:layout_below="@id/tvSign"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
